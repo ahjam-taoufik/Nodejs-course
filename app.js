@@ -1,5 +1,14 @@
-const getNote=require('./notes')
+const validator=require('validator')
 
-const msg= getNote()
 
-console.log(msg)
+
+const email= 'toto@gmail.com'
+const isvalid=validator.isEmail(email)
+console.log(isvalid)
+
+
+const text= ''
+const isvalid2=validator.isEmpty(text)
+console.log(isvalid2)
+
+
