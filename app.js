@@ -1,14 +1,11 @@
-const validator=require('validator')
+import chalk  from 'chalk';  //you must add   "type": "module"    in your package.json
+const error=chalk.red.inverse
+const success=chalk.green.inverse
 
 
 
-const email= 'toto@gmail.com'
-const isvalid=validator.isEmail(email)
-console.log(isvalid)
-
-
-const text= ''
-const isvalid2=validator.isEmpty(text)
-console.log(isvalid2)
-
+const text1=error('this is error')
+const text2=success('this is success')
+console.log(text1);
+console.log(text2);
 
