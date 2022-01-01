@@ -1,4 +1,4 @@
-import chalk  from 'chalk';  //you must add   "type": "module"    in your package.json
+import chalk  from 'chalk';  //npm install chalk
 const error=chalk.red.inverse
 const success=chalk.green.inverse
 
