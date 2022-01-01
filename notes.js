@@ -1,7 +1,6 @@
-const fs=require('fs')
+const note=function () {
+    return "your Note. . . . ."
+}
 
-//fs.writeFileSync('note.txt','Hello word. this file is created by nodejs')
-//fs.writeFileSync('note.txt','this code will be overriding the last code')
 
-fs.appendFileSync('note.txt',' this code wille be append in your file')
-
+module.exports=note;
