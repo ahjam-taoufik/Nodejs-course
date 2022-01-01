@@ -1,13 +1,19 @@
-const book={
-     title: "the first workbook",
-     author: "taoufik ahjam"
-}
+const fs=require('fs')
+//part1 of exercice  create and write in  file Json
+// const book={
+//      title: "the first workbook",
+//      author: "taoufik ahjam",
+//      descrition: "lorem ipsum  lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+// }
+// const stringText=JSON.stringify(book)
+// fs.writeFileSync('data.json', stringText)
 
-//convert object to string
-const text=JSON.stringify(book)
-console.log(text)
 
-//convert object to json database
-const text2=JSON.parse(text)
-console.log(text2)
-console.log(text2.title)
+//part2 of exercice read file Json
+const buffer= fs.readFileSync('data.json')
+const stringtext=buffer.toString()
+const jsontext=JSON.parse(stringtext)
+console.log(jsontext);
+
+
+
