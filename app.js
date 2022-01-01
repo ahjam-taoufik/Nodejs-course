@@ -1,11 +1,19 @@
-import chalk  from 'chalk';  //you must add   "type": "module"    in your package.json
-const error=chalk.red.inverse
-const success=chalk.green.inverse
+
+import chalk from "chalk"
+
+const tag=process.argv[2]
+const flag=process.argv[3]
+
+if (tag=='add') {
+    console.log(chalk.green('add tag'))
+}
+
+if (flag=='--test') {
+    console.log(chalk.red('--test flag'))
+    
+}
 
 
 
-const text1=error('this is error')
-const text2=success('this is success')
-console.log(text1);
-console.log(text2);
+
 
